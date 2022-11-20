@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="lib/elem.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>elem.js</title>
+</head>
+<body>
+    <div>
+        <code class="wrapper">el('div', [], {}, </code><br>
+        <div class="title">
+            <code>&emsp;el('h1', [], {},</code><br>
+            <code>&emsp;&emsp;('The smallest library for dynamic content')</code><br>
+            <code>&emsp;),</code>
+        </div>
+        <h1 class="title hide">The smallest library for dynamic content</h1>
+        <div class="subtitle">
+            <code>&emsp;el('h2', [], {},</code><br>
+            <code>&emsp;&emsp;(`Only ${bytes} bytes minified`)</code><br>
+            <code>&emsp;),</code>
+        </div>
+        <h2 class="subtitle hide">Only 259 bytes minified</h2>
+        <div>
+            <code class="btn-div">&emsp;el('div', [], {}, </code><br>
+            <code class="btn1">&emsp;&emsp;el('a', [], {href: '#learn'}, t('Learn More')),</code><br>
+            <a class="btn1 hide" href="#learn">Learn More</a>
+            <code class="btn2">&emsp;&emsp;el('a', [], {href: '#start'}, t('Get Started'))</code><br>
+            <a class="btn2 hide" href="#start">Get Started</a>
+            <code class="btn-div">&emsp;)</code>
+        </div>
+        <code class="wrapper">)</code>
+    </div>
+</body>
+</html>
